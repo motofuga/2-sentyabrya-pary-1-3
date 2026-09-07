@@ -1,0 +1,11 @@
+# Объявление пустого класса Car
+class Car:
+    pass
+
+# Добавление атрибутов с помощью setattr()
+setattr(Car, 'model', 'Тойота')
+setattr(Car, 'color', 'Розовый')
+setattr(Car, 'number', 'П111УУ77')
+
+# Вывод значения атрибута color из словаря __dict__
+print(Car.__dict__['color'])
