@@ -1,0 +1,24 @@
+# Объявление класса MediaPlayer
+class MediaPlayer:
+    def open(self, file):
+        self.filename = file
+        print(f"Открыт файл: {file}")  # Дополнительное сообщение
+    
+    def play(self):
+        print(f"Воспроизведение {self.filename}")
+
+# Создание двух экземпляров
+media1 = MediaPlayer()
+media2 = MediaPlayer()
+print("Созданы объекты media1 и media2\n")
+
+# Вызов метода open() для каждого экземпляра
+print("Вызов open():")
+media1.open("filemedia1")
+media2.open("filemedia2")
+print()
+
+# Вызов метода play() для каждого экземпляра
+print("Вызов play():")
+media1.play()
+media2.play()
