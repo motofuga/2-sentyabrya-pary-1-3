@@ -1,0 +1,16 @@
+# Объявление класса Dictionary
+class Dictionary:
+    rus = "Питон"
+    eng = "Python"
+
+# Вывод всех атрибутов для наглядности
+print("Все атрибуты класса Dictionary:")
+print(f"rus: {Dictionary.rus}")
+print(f"eng: {Dictionary.eng}")
+
+# Проверка существующих атрибутов
+print("\nПроверка атрибута 'rus' (существует):")
+print(getattr(Dictionary, 'rus', False))
+
+print("\nПроверка атрибута 'rus_word' (не существует):")
+print(getattr(Dictionary, 'rus_word', False))
