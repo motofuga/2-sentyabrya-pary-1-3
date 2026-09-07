@@ -1,0 +1,27 @@
+# Объявление класса TravelBlog
+class TravelBlog:
+    total_blogs = 0
+
+print(f"Начальное значение total_blogs: {TravelBlog.total_blogs}")
+
+# Создание первого экземпляра tb1
+tb1 = TravelBlog()
+tb1.name = 'Франция'
+tb1.days = 6
+print(f"Создан tb1: name={tb1.name}, days={tb1.days}")
+
+# Увеличение total_blogs на 1
+TravelBlog.total_blogs += 1
+print(f"total_blogs после tb1: {TravelBlog.total_blogs}")
+
+# Создание второго экземпляра tb2
+tb2 = TravelBlog()
+tb2.name = 'Италия'
+tb2.days = 5
+print(f"Создан tb2: name={tb2.name}, days={tb2.days}")
+
+# Увеличение total_blogs на 1
+TravelBlog.total_blogs += 1
+print(f"total_blogs после tb2: {TravelBlog.total_blogs}")
+
+print(f"\nИтоговое значение total_blogs: {TravelBlog.total_blogs}")
