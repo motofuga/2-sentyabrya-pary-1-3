@@ -1,0 +1,13 @@
+# Объявление класса Notes
+class Notes:
+    uid = 1005435
+    title = "Шутка"
+    author = "И.С. Бах"
+    pages = 2
+
+# Вывод всех атрибутов для проверки
+print("Атрибуты класса Notes:")
+print(f"uid: {Notes.uid}")
+print(f"title: {Notes.title}")
+print(f"author: {Notes.author}")
+print(f"pages: {Notes.pages}")
