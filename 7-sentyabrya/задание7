@@ -1,0 +1,29 @@
+# Объявление класса Figure
+class Figure:
+    type_fig = 'ellipse'
+    color = 'red'
+
+# Создание экземпляра fig1
+fig1 = Figure()
+
+# Добавление локальных атрибутов
+fig1.start_pt = (10, 5)
+fig1.end_pt = (100, 20)
+fig1.color = 'blue'
+
+# Вывод всех атрибутов до удаления
+print("До удаления color:")
+print(f"Атрибуты класса: type_fig={Figure.type_fig}, color={Figure.color}")
+print(f"Локальные атрибуты fig1: {fig1.__dict__}")
+
+# Удаление свойства color из экземпляра
+del fig1.color
+
+# Вывод атрибутов после удаления
+print("\nПосле удаления color:")
+print(f"Локальные атрибуты fig1: {fig1.__dict__}")
+print(f"Атрибуты класса: type_fig={Figure.type_fig}, color={Figure.color}")
+
+# Вывод списка имен всех локальных свойств объекта fig1
+print("\nИмена локальных свойств fig1:")
+print(' '.join(fig1.__dict__.keys()))
