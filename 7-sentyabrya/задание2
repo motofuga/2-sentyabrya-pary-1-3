@@ -1,6 +1,6 @@
 # Объявление класса Goods
 class Goods:
-    title = "мороженка"
+    title = "Мороженое"
     weight = 154
     tp = "Еда"
     price = 1024
